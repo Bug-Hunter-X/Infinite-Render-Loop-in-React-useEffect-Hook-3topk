@@ -1,0 +1,3 @@
+# Infinite Render Loop in React useEffect Hook
+
+This repository demonstrates a common React bug: an infinite render loop caused by an incorrectly used `useEffect` hook.  The component renders infinitely because the `useEffect` hook lacks a dependency array, causing it to run after every render, leading to a continuous update cycle. The solution shows how to fix this by providing the correct dependency array.
